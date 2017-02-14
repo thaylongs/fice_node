@@ -1,0 +1,72 @@
+{% extends '/layout/MainLayout.twig' %}
+
+{% block css_extra %}
+  <link rel="stylesheet" href="/css/programacao.css">
+{% endblock %}
+
+{% block content %}
+
+  <h1>PROGRAMAÇÃO</h1>
+  <h2>1ª Edição de 23 à 26 de Março de 2017</h2>
+  <h3>Palmas - TO</h3>
+  <div id="prog_content">
+
+      <p align="justify">
+          Com uma programação de quatro dias consecutivos, o FICE apresenta obras que contrastam diferentes
+          propostas estéticas e tipos de relação com o espectador. O programa é desenhado de forma a fomentar
+          o debate entre as diferentes perspectivas de criação de modo que cada espetáculo seja “ouvido” de
+          forma individual e ao mesmo tempo em diálogo com os demais.
+      </p>
+      <p align="justify">
+          O programa envolve a apresentação de espetáculos locais, nacionais e internacionais, nas áreas de
+          dança contemporânea, teatro, teatro de imersão, performance e multilinguagens, que abarcam a
+          diversidade da prática e do pensamento contemporâneo. Paralelamente, a programação conta ainda com a
+          realização de oficinas gratuitas, seminário, encontros, intervalos festivos entre as apresentações
+          dos espetáculos e festa de encerramento.
+      </p>
+      <p align="justify">
+          Com muita satisfação, te convidamos a formar parte integral da primeira edição do FICE! Esperamos
+          que você possa desfrutar da programação que preparamos especialmente para você. Para mais detalhes e
+          informações sobre as atividades clique em nossa programação.
+      </p>
+  </div>
+
+  <div>
+      <section class="tiles">
+          <article class="style1">
+              <span class="image">
+                  <img src="/images/cartaz/danca_contemporanea.jpg"alt=""/>
+              </span>
+              <a href="danca"> </a>
+          </article>
+          <article class="style2">
+             <span class="image">
+                  <img src="/images/cartaz/piranha.jpg"alt=""/>
+              </span>
+              <a href="programacao/piranha"></a>
+          </article>
+          <article class="style3">
+              <span class="image">
+                  <img src="/images/cartaz/kim_kardashian.jpg"alt=""/>
+              </span>
+              <a href="programacao/kardashian"> </a>
+          </article>
+          <article class="style4">
+              <span class="image">
+                  <img src="/images/cartaz/medelei.jpg"alt=""/>
+              </span>
+              <a href="programacao/medelei"> </a>
+          </article>
+          <article class="style6">
+              <span class="image">
+                  <img src="/images/cartaz/fice.jpg"alt=""/>
+              </span>
+              <a href="/sobre"></a>
+          </article>
+      </section>
+  </div>
+{% endblock %}
+
+{% block js_extra %}
+  <!-- js -->
+{% endblock %}

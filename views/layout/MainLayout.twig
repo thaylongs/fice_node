@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FICE</title>
+    <meta name="generator" content="GravCMS" />
+    <meta name="description" content="Grav is an easy to use, yet powerful, open source flat-file CMS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="canonical" href="http://www.fice.art.br" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="/css/pure-0.5.0/grids-min.css" type="text/css" rel="stylesheet" />
+    <link href="/css-compiled/nucleus.css" type="text/css" rel="stylesheet" />
+    <link href="/css-compiled/template.css" type="text/css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="/css/slidebars.min.css" type="text/css" rel="stylesheet" />
+
+    <style type="text/css" >
+        #top{
+            background:url('/images/fundo_tiny.png') no-repeat center center fixed !important;
+            -webkit-background-size: cover !important;
+            -moz-background-size: cover !important;
+            -o-background-size: cover !important;
+            background-size: cover !important;
+        }
+        a{
+            color: white;
+        }
+
+        #body{
+            padding-top: 72px;
+        }
+
+    </style>
+
+    {% block css_extra %}{% endblock %}
+
+</head>
+<body id="top" class="" style="background-color:transparent">
+<div id="sb-site" style="background-color:transparent">
+    {% include '/layout/Header.html' %}
+
+    <section id="body" class="" style="background-color:transparent;color: white">
+
+        {% block content %}{% endblock %}
+
+    </section>
+
+    {% include '/layout/Footer.html' %}
+
+    <script src="/jquery/jquery-2.x.min.js" type="text/javascript" ></script>
+    <script src="/js/modernizr.custom.71422.js" type="text/javascript" ></script>
+    <script src="/js/antimatter.js" type="text/javascript" ></script>
+    <script src="/js/slidebars.min.js" type="text/javascript" ></script>
+
+    {% block js_extra %}{% endblock %}
+
+</div>
+{% include '/layout/SideBar.html' %}
+<script>
+    $(function () {
+        $(document).ready(function() {
+            $.slidebars({
+                hideControlClasses: true,
+                scrollLock: true
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
