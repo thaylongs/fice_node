@@ -26,9 +26,46 @@ router.get('/programacao', function(req, res, next) {
   res.render('programacao', { title: 'Express' });
 });
 
+router.get('/ingressos', function(req, res, next) {
+  res.render('ingressos', { title: 'Express' });
+});
+
+router.get('/imprensa', function(req, res, next) {
+  res.render('imprensa', { title: 'Express' });
+});
 
 router.get('/programacao/piranha', function(req, res, next) {
   res.render('programacao/piranha', { title: 'Express' });
 });
+
+
+router.get('/programacao/suely', function(req, res, next) {
+  res.render('programacao/suely', { title: 'Express' });
+});
+
+router.get('/programacao/medelei', function(req, res, next) {
+  res.render('programacao/medelei', { title: 'Express' });
+});
+
+router.get('/programacao/kardashian', function(req, res, next) {
+  res.render('programacao/kardashian', { title: 'Express' });
+});
+
+router.get('/programacao/contemporanea', function(req, res, next) {
+  res.render('programacao/contemporanea', { title: 'Express' });
+});
+
+router.get('/programacao/birds', function(req, res, next) {
+  res.render('programacao/birds', { title: 'Express' });
+});
+
+router.get('/programacao/ricardo', function(req, res, next) {
+  res.render('programacao/ricardo', { title: 'Express' });
+});
+
+router.get('/programacao/the-sirens', function(req, res, next) {
+  res.render('programacao/the-sirens', { title: 'Express' });
+});
+
 
 module.exports = router;
