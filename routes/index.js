@@ -34,10 +34,25 @@ router.get('/imprensa', function(req, res, next) {
   res.render('imprensa', { title: 'Express' });
 });
 
+router.get('/expandido', function(req, res, next) {
+  res.render('expandido', { title: 'Express' });
+});
+
+router.get('/palestras', function(req, res, next) {
+  res.render('palestras', { title: 'Express' });
+});
+
+router.get('/oficinas', function(req, res, next) {
+  res.render('oficinas', { title: 'Express' });
+});
+
 router.get('/programacao/piranha', function(req, res, next) {
   res.render('programacao/piranha', { title: 'Express' });
 });
 
+router.get('/programacao/danca', function(req, res, next) {
+  res.render('programacao/danca', { title: 'Express' });
+});
 
 router.get('/programacao/suely', function(req, res, next) {
   res.render('programacao/suely', { title: 'Express' });
