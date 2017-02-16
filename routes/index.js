@@ -82,5 +82,9 @@ router.get('/programacao/the-sirens', function(req, res, next) {
   res.render('programacao/the-sirens', { title: 'Express' });
 });
 
+router.get('/imprensa', function(req, res, next) {
+  res.render('imprensa', { title: 'Express' });
+});
+
 
 module.exports = router;
