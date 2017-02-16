@@ -19,13 +19,43 @@
       .carousel-control.left{
         background-image:none;
       }
+      #logo-top-page{
+        background: url('/images/fice.png') no-repeat center;
+        background-position:center;
+        background-size: auto 256px;
+        min-height:256px;
+      }
+
+      #float-rigth-menu{
+        float: right;
+      }
+
     </style>
 {% endblock %}
 
 {% block content %}
 
   <div id="logo-top-page">
-      <img src="/images/fice.png" style="height:256px;display:block;margin:auto;"/>
+      <div id="float-rigth-menu">
+        <div>
+          <a href="/impressa">
+              <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+              Impressa
+          </a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/fice2017/">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              Facebook
+          </a>
+        </div>
+        <div>
+          <a href="https://vimeo.com/user54894477">
+              <i class="fa fa-vimeo" aria-hidden="true"></i>
+              Vimeo
+          </a>
+        </div>
+      </div>
   </div>
   <div id="carousel" style="margin-top: 20px">
       <div id="programacao" class="carousel slide" data-ride="carousel">
