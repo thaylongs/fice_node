@@ -1,6 +1,10 @@
 /*teste*/
 @import url(//fonts.googleapis.com/css?family=Montserrat:400|Raleway:300,400,600|Inconsolata);
-#header #logo h3, #header #navbar .panel-activation, #footer p {
+
+#footer p{
+  color: white;
+}
+#header #logo h3, #header #navbar .panel-activation {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
