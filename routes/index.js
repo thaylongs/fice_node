@@ -10,6 +10,10 @@ router.get('/sobre', function(req, res, next) {
   res.render('sobre', { title: 'Express' });
 });
 
+router.get('/calendario', function(req, res, next) {
+  res.render('calendario', { title: 'Express' });
+});
+
 router.get('/convocatoria', function(req, res, next) {
   res.render('convocatoria', { title: 'Express' });
 });
