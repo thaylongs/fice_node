@@ -46,6 +46,10 @@ router.get('/palestras', function(req, res, next) {
   res.render('palestras', { title: 'Express' });
 });
 
+router.get('/batepapo', function(req, res, next){
+  res.render('batepapo',{ title: 'Express' });
+});
+
 router.get('/oficinas', function(req, res, next) {
   res.render('oficinas', { title: 'Express' });
 });
@@ -80,6 +84,14 @@ router.get('/programacao/birds', function(req, res, next) {
 
 router.get('/programacao/ricardo', function(req, res, next) {
   res.render('programacao/ricardo', { title: 'Express' });
+});
+
+router.get('/programacao/ciclo', function(req, res, next) {
+  res.render('programacao/ciclo', { title: 'Express' });
+});
+
+router.get('/programacao/ator', function(req, res, next) {
+  res.render('programacao/ator', { title: 'Express' });
 });
 
 router.get('/programacao/the-sirens', function(req, res, next) {
