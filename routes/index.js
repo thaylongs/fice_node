@@ -74,10 +74,6 @@ router.get('/programacao/kardashian', function(req, res, next) {
   res.render('programacao/kardashian', { title: 'Express' });
 });
 
-router.get('/programacao/contemporanea', function(req, res, next) {
-  res.render('programacao/contemporanea', { title: 'Express' });
-});
-
 router.get('/programacao/birds', function(req, res, next) {
   res.render('programacao/birds', { title: 'Express' });
 });
